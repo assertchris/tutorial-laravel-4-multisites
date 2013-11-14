@@ -14,9 +14,7 @@ extends Migration
             $table->string("title_nl");
             $table->text("content_en");
             $table->text("content_nl");
-            $table->dateTime("created_at");
-            $table->dateTime("updated_at");
-            $table->dateTime("deleted_at");
+            $table->timestamps();
         });
     }
 
