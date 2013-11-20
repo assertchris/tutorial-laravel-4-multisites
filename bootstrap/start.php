@@ -27,8 +27,8 @@ $app->redirectIfTrailingSlash();
 */
 
 $env = $app->detectEnvironment([
-    "en" => ["dev.en.tutorial-laravel-4-multisites"],
-    "nl" => ["dev.nl.tutorial-laravel-4-multisites"]
+    "www"   => ["dev.www.tutorial-laravel-4-multisites"],
+    "admin" => ["dev.admin.tutorial-laravel-4-multisites"]
 ]);
 
 /*

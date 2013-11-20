@@ -31,22 +31,22 @@ foreach ($locales as $locale)
 }
 
 Route::group([
-    "domain" => "dev.en.tutorial-laravel-4-multisites"
+    "domain" => "dev.www.tutorial-laravel-4-multisites"
 ], function()
 {
-    Route::any("/cheese", function()
+    Route::any("/about", function()
     {
-        return "You are not welcome here!";
+        return "This is the client-facing website.";
     });
 });
 
 Route::group([
-    "domain" => "dev.nl.tutorial-laravel-4-multisites"
+    "domain" => "dev.admin.tutorial-laravel-4-multisites"
 ], function()
 {
-    Route::any("/cheese", function()
+    Route::any("/about", function()
     {
-        return "You are welcome here!";
+        return "This is the admin site.";
     });
 });
 
