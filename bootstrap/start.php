@@ -13,6 +13,16 @@
 
 $app = new Illuminate\Foundation\Application;
 
+
+/*
+|--------------------------------------------------------------------------
+| Handle trailing slash
+|--------------------------------------------------------------------------
+|
+| http://laravel.com/docs/upgrade#upgrade-4.1
+| Not needed if using Laravel V4.1 or greater.
+|
+*/
 $app->redirectIfTrailingSlash();
 
 /*
